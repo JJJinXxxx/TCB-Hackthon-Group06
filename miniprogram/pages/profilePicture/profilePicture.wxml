@@ -1,0 +1,16 @@
+    <!-- 用户 openid -->
+  <view class="card">
+    <image src="{{avatarUrl}}"></image>
+  </view>
+
+      <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="me"
+    >帮我的头像戴口罩！</button>
+    <view class="uploader-text" bindtap="doUpload">
+      <button class="other">帮别的图片戴口罩！</button>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>

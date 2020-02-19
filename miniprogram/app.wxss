@@ -1,0 +1,4 @@
+Page{
+    background-image: url(https://6d61-mask-55bvo-1301214208.tcb.qcloud.la/my-image.png?sign=4fd6d0a631b08cd4f9c115da9576abbb&t=1581073773);
+    background-repeat:no-repeat;      background-size:100% 100%;-moz-background-size:100% 100%;
+}

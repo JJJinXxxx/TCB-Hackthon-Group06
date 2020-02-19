@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/profilePicture/profilePicture", 
+    "pages/home/home",
+
+    "pages/index/index"
+
+  ],
+ "window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#3b9a9c",
+  "navigationBarTitleText": "口罩给我",
+  "navigationBarTextStyle": "white"
+},
+  "tabBar": {
+    "color": "#FAFAFA",
+    "selectedColor": "#4bc2c5",
+    "backgroundColor": "#3b9a9c",
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "text": "仁志“疫”尽",
+        "iconPath": "images/test.png",
+       "selectedIconPath": "images/colored2.png"
+      },
+      {
+        "pagePath": "pages/profilePicture/profilePicture",
+        "text": "相互“罩”应",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/colored3.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "“肺”你不可",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/colored1.png"
+      }    
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}

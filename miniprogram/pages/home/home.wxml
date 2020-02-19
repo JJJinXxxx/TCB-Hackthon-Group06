@@ -1,0 +1,11 @@
+<!--miniprogram/pages/home/home.wxml-->
+
+<view class="team">
+<text>大军来“洗”！快“漱”手就“勤”吧！</text>
+  <view class="row"><image src="https://6d61-mask-55bvo-1301214208.tcb.qcloud.la/11.png?sign=9067ddb0ec7c3d9816962f2332fb1572&t=1581073839"></image>
+  <image src="https://6d61-mask-55bvo-1301214208.tcb.qcloud.la/22.png?sign=1fd372022448b20d2a7679409ccf4ba3&t=1581073861"></image></view>
+   <view class="row">
+  <image src="https://6d61-mask-55bvo-1301214208.tcb.qcloud.la/33.png?sign=293ca1545a7a8b067a333e05978446e1&t=1581073872"></image>
+  <image src="https://6d61-mask-55bvo-1301214208.tcb.qcloud.la/44.png?sign=cb605eb8730367915360a02e16b66b0d&t=1581073889"></image>
+  </view>
+</view>

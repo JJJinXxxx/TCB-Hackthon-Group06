@@ -1,0 +1,59 @@
+<!-- 封面 -->
+<view class="cover" wx:if="{{already}}">
+    <button class="start" bindtap="startTest">{{startText}}</button>
+</view>
+
+<!-- 题目 -->
+    <view class="card" wx:if="{{one}}">
+        <view class="question"><text>{{q1}}</text></view>
+        <view class="choice">
+          <button id="0" class="choiceA" bindtap="next1">A.   {{a}}</button>
+          <button id="1" class="choiceB" bindtap="next1">B.   {{b}}</button>
+          <button id="2" class="choiceC" bindtap="next1">C.   {{c}}</button>
+          <button id="3" class="choiceD" bindtap="next1">D.   {{d}}</button>
+        </view>
+    </view>
+    <view class="card" wx:if="{{two}}">
+        <view class="question"><text>{{q2}}</text></view>
+          <button id="0" class="choiceA" bindtap="next2">A.   {{a}}</button>
+          <button id="1" class="choiceB" bindtap="next2">B.   {{b}}</button>
+          <button id="2" class="choiceC" bindtap="next2">C.   {{c}}</button>
+          <button id="3" class="choiceD" bindtap="next2">D.   {{d}}</button>
+    </view>
+    <view class="card" wx:if="{{three}}">
+        <view class="question"><text>{{q3}}</text></view>
+          <button id="0" class="choiceA" bindtap="next3">A.   {{a}}</button>
+          <button id="1" class="choiceB" bindtap="next3">B.   {{b}}</button>
+          <button id="2" class="choiceC" bindtap="next3">C.   {{c}}</button>
+          <button id="3" class="choiceD" bindtap="next3">D.   {{d}}</button>
+    </view>
+    <view class="card" wx:if="{{four}}">
+        <view class="question"><text>{{q4}}</text></view>
+          <button id="0" class="choiceA" bindtap="next4">A.   {{a}}</button>
+          <button id="1" class="choiceB" bindtap="next4">B.   {{b}}</button>
+          <button id="2" class="choiceC" bindtap="next4">C.   {{c}}</button>
+          <button id="3" class="choiceD" bindtap="next4">D.   {{d}}</button>
+    </view>
+    <view class="card" wx:if="{{five}}">
+        <view class="question" wx:if="{{five}}"><text>{{q5}}</text></view>
+          <button id="0" class="choiceA" bindtap="next5" wx:if="{{five}}">A.   {{a}}</button>
+          <button id="1" class="choiceB" bindtap="next5" wx:if="{{five}}">B.   {{b}}</button>
+          <button id="2" class="choiceC" bindtap="next5" wx:if="{{five}}">C.   {{c}}</button>
+          <button id="3" class="choiceD" bindtap="next5" wx:if="{{five}}">D.   {{d}}</button>
+</view>
+
+<!-- 提示 -->
+<mp-dialog title="{{title}}" show="{{showOneButtonDialog}}" bindbuttontap="tapDialogButton" buttons="{{oneButton}}">
+        <view>{{tips}}</view>
+    </mp-dialog>
+    
+    
+
+<!-- 海报生成 -->
+<view class="back" wx:if="{{print}}">
+    <painter customStyle='position: absolute; left: -999rpx;' palette="{{template}}" bind:imgOK="onImgOK" widthPixels="256rpx"/>
+    <image src="{{image}}" class="outcome"/>
+    <button class="goal">答对了:{{goal}}题 / 最终得分:{{grade}}</button>
+    <button class="finnal" bind:tap='saveImage'>{{startText}}</button>
+</view>
+
